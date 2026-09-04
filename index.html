@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover" />
+  <meta name="theme-color" content="#eff7ff" />
+  <title>For You ♡</title>
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="browser-bar"><span>23:01</span><span class="url">for-you.netlify.app</span><span>◯</span></div>
+
+    <div id="hearts"></div>
+
+    <section id="countdownIntro" class="countdown-intro active-screen" aria-label="birthday opening">
+      <div class="rain" id="rain"></div>
+      <div class="rain-overlay"></div>
+      <div class="opening-glow" aria-hidden="true"></div>
+      <div class="opening-content">
+        <span class="countdown-kicker">A LITTLE SURPRISE FOR YOU</span>
+        <h1 class="rain-title">HAPPY<br><em>BIRTHDAY</em></h1>
+        <p class="countdown-name">for my pretty girl ♡</p>
+        <div class="birthday-countdown" aria-label="countdown birthday">
+          <div><strong id="bDays">00</strong><span>days</span></div>
+          <div><strong id="bHours">00</strong><span>hours</span></div>
+          <div><strong id="bMinutes">00</strong><span>minutes</span></div>
+          <div><strong id="bSeconds">00</strong><span>seconds</span></div>
+        </div>
+        <p class="opening-hint">your little birthday surprise is waiting...</p>
+        <button id="openSurprise" class="blue-btn opening-btn">open my surprise ♡</button>
+      </div>
+    </section>
+
+    <section id="pinScreen" class="screen active-screen hidden">
+      <div class="top-music">◷</div>
+      <img class="mascot mascot-lg" src="/stickers/Usil.png" alt="" />
+      <p class="intro-copy">Hi love, ayo tebak passwordnya,<br>I bet u knowww!!</p>
+      <div class="pin-dots" id="pinDots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="keypad" id="keypad">
+        <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+        <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+        <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+        <span></span><button data-key="0">0</button><button data-key="back">⌫</button>
+      </div>
+      <small>clue : your birthday</small>
+    </section>
+
+    <main id="app" class="hidden">
+      <section class="screen scene" id="hello">
+        <div class="top-music music-control">♫</div>
+        <div class="center-stack">
+          <img class="mascot" src="/stickers/Alika-Cantik.png" alt="" />
+          <h1>Hi, pretty <span>♡</span> 👋🏻</h1>
+          <button class="blue-btn" data-next="ready">tap disini <3</button>
+        </div>
+      </section>
+
+      <section class="screen scene" id="ready">
+        <div class="top-music music-control">♫</div>
+        <div class="center-stack">
+          <img class="mascot" src="/stickers/Excited.png" alt="" />
+          <h2>are you ready to open<br>thisss?</h2>
+          <div class="yesno"><button class="blue-btn" data-next="birthday2">yess</button><button class="outline-btn" data-next="birthday">noo</button></div>
+        </div>
+      </section>
+
+      <section class="screen scene" id="birthday">
+        <div class="top-music music-control">♫</div>
+        <div class="center-stack">
+          <img class="mascot" src="/stickers/Ngambek.png" alt="" />
+          <h2>OH GITU SEKARANG KAMU<br>SAMA AKU? 😍</h2>
+          <button class="blue-btn" data-next="birthday2">lanjut <3</button>
+        </div>
+      </section>
+
+      <section class="screen scene" id="birthday2">
+        <div class="top-music music-control">♫</div>
+        <div class="center-stack">
+          <img class="mascot" src="/stickers/Alika-2.jpg" alt="" />
+          <h2>Today, this pretty girl turns 24!<br>Happy birthday, my luv!</h2>
+          <p class="blue-copy birthday-copy">And now... let's count down to our little dinner date ♡</p>
+          <div class="dinner-countdown" aria-label="countdown dinner">
+            <div><strong id="dHours">00</strong><span>hours</span></div>
+            <div><strong id="dMinutes">00</strong><span>minutes</span></div>
+            <div><strong id="dSeconds">00</strong><span>seconds</span></div>
+          </div>
+          <small id="dinnerTargetLabel" class="countdown-date-label">your dinner date ♡</small>
+          <button class="blue-btn" data-next="dinnerInvite">lihat undangan ♡</button>
+        </div>
+      </section>
+
+      <section class="screen dinner-screen" id="dinnerInvite">
+        <div class="invite-ornaments" aria-hidden="true">
+          <div class="party-deco deco-1">🎈</div><div class="party-deco deco-2">🎂</div><div class="party-deco deco-3">🎉</div>
+          <div class="face-sticker face-left"><img src="/stickers/Alika-birthday.png" alt="" /></div>
+          <div class="face-sticker face-right"><img src="/stickers/Alika-birthday.png" alt="" /></div>
+          <div class="confetti-cloud">✦ ✧ • ✦ • ✧ ✦</div>
+        </div>
+        <div class="invite-card">
+          <div class="invite-glitter" aria-hidden="true"></div>
+          <div class="invite-topline">JOIN ME FOR A SPECIAL DINNER</div>
+          <h2 class="invite-script">ALIKA'S Birthday</h2>
+          <h3>🎂<span>24<sup>TH</sup></span></h3>
+          <div class="invite-divider"><span>♡</span></div>
+          <div class="invite-grid">
+            <div><small>SAVE THE DATE</small><b>Saturday</b><span>5 September 2026</span></div>
+            <div><small>DINNER STARTS</small><b>18.00</b><span>o'clock</span></div>
+          </div>
+          <div class="invite-note">A little dinner date, just for us.<br>Dress pretty, come hungry, and let me spoil you tonight ♡</div>
+          <div class="invite-bottom">— I LOVE YOU 💙 —</div>
+        </div>
+        <div class="invite-actions">
+          <button class="blue-btn" data-next="rsvpConfirmed">aku ikut ♡</button>
+          <button class="outline-btn" data-next="bookIntro">lihat kenangan dulu</button>
+        </div>
+      </section>
+
+      <section class="screen scene rsvp-screen" id="rsvpConfirmed">
+        <div class="party-burst" aria-hidden="true">🎉 🎂 ✨</div>
+        <img class="mascot" src="/stickers/Excited.png" alt="" />
+        <h2>YAYYY, kamu ikut! 💙</h2>
+        <p class="blue-copy">Aku seneng banget dengernya. Berarti dinner kita resmi jadi satu little date yang nggak boleh gagal 🤍</p>
+        <div class="rsvp-ticket"><span>RSVP CONFIRMED</span><strong>1 seat reserved</strong><small>just for my favorite person ♡</small></div>
+        <button class="blue-btn" data-next="bookIntro">sekarang, yuk lihat kenangan kita 📖</button>
+      </section>
+
+      <section class="screen scene photo-scene" id="photo1">
+        <div class="top-music music-control">♫</div>
+        <img class="memory-photo" src="/photos/photo-1.svg" alt="Memory 1" />
+        <p class="blue-copy">This was our first picture, a moment I’ll always remember.</p>
+        <button class="blue-btn" data-next="photo2">klik ini <3</button>
+      </section>
+
+      <section class="screen scene photo-scene" id="photo2">
+        <div class="top-music music-control">♫</div>
+        <img class="memory-photo" src="/photos/photo-2.svg" alt="Memory 2" />
+        <p class="blue-copy">I’m so grateful for every moment we’ve shared since then.</p>
+        <button class="blue-btn" data-next="photo3">klik ini <3</button>
+      </section>
+
+      <section class="screen scene photo-scene" id="photo3">
+        <div class="top-music music-control">♫</div>
+        <img class="memory-photo" src="/photos/photo-3.svg" alt="Memory 3" />
+        <p class="blue-copy">Thank you for being part of my days and making them feel special.</p>
+        <button class="blue-btn" data-next="photo4">klik ini <3</button>
+      </section>
+
+      <section class="screen scene photo-scene" id="photo4">
+        <div class="top-music music-control">♫</div>
+        <img class="memory-photo" src="/photos/photo-4.svg" alt="Memory 4" />
+        <p class="blue-copy">I hope we keep creating memories, big and small, together.</p>
+        <button class="blue-btn" data-next="photo5">klik ini <3</button>
+      </section>
+
+      <section class="screen scene photo-scene" id="photo5">
+        <div class="top-music music-control">♫</div>
+        <img class="memory-photo" src="/photos/photo-5.svg" alt="Memory 5" />
+        <p class="blue-copy">You deserve the world and I’ll always love you.</p>
+        <button class="blue-btn" data-next="bookIntro">klik ini <3</button>
+      </section>
+
+      <section class="screen scene" id="bookIntro">
+        <div class="top-music music-control">♫</div>
+        <div class="center-stack">
+          <img class="mascot" src="/stickers/us.jpeg" alt="" />
+          <h2>Now let’s open<br><em>our little book.</em></h2>
+          <button class="blue-btn" data-next="bookSection">buka buku ♡</button>
+        </div>
+      </section>
+
+      <section class="screen book-screen" id="bookSection">
+        <div class="top-music music-control">♫</div>
+        <div class="book-shell">
+          <span class="book-kicker">our moments</span>
+          <div class="book" id="book">
+            <div class="book-page page-back"></div>
+            <div class="book-page page p3" data-page="2"><div class="page-inner"><span>03</span><img src="/photos/photo-5.jpeg"><p>Semoga setiap halaman berikutnya punya cerita yang lebih indah.</p></div></div>
+            <div class="book-page page p2" data-page="1"><div class="page-inner"><span>02</span><img src="/photos/photo-4.jpeg"><p>Ketika pertengkaran hebat menghampiri dan kita bisa berdamai berkompromi satu sama lain, Hal-hal sederhana terasa spesial ketika dilakukan bersama.</p></div></div>
+            <div class="book-page page p1" data-page="0"><div class="page-inner cover"><small>A little book</small><h3>Our<br><em>Moments</em></h3><img src="/photos/photo-2.jpeg"><small class="tap">tap to open</small></div></div>
+            <button id="bookHotspot" class="book-hotspot" aria-label="buka halaman"></button>
+          </div>
+          <div class="book-nav">
+            <button id="bookPrev">←</button><span id="bookStatus">Cover</span><button id="bookNext">→</button>
+          </div>
+        </div>
+        <button class="blue-btn bottom-btn" data-next="music">lanjut →</button>
+      </section>
+
+      <section class="screen scene" id="music">
+        <div class="top-music music-control">♫</div>
+        <div class="center-stack">
+          <img class="music-sticker" src="/stickers/music.svg" alt="" />
+          <h2>our song ♫</h2>
+          <div class="music-caption">background music ♫ <span>lofi birthday ambience</span></div>
+          <div class="spotify-wrap">
+            <div class="spotify-caption">our playlist · tap play when you’re ready ♡</div>
+            <div id="spotify-embed" class="spotify-embed"></div>
+          </div>
+          <button class="blue-btn" data-next="letter">lanjut →</button>
+        </div>
+      </section>
+
+      <section class="screen letter-screen" id="letter">
+        <div class="top-music music-control">♫</div>
+        <div class="letter">
+          <h2>Happy birthday, my love 💙🤍</h2>
+          <div class="letter-line"></div>
+          <p>On your special day, I just want to remind you how grateful I am to have you in my life.</p>
+          <p>Thank you for being the amazing person you are—kind, loving, and always making everything feel a little warmer just by being around.</p>
+          <p>I hope this new year of your life brings you happiness, peace, and all the good things you’ve been wishing for.</p>
+          <p>I’m thankful I get to celebrate you today, and hopefully many more days after this.</p>
+          <p>Here’s to creating more stories with you, growing together, and always finding joy in the little things.</p>
+          <p>Happy birthday. You deserve all the love in the world. ♡</p>
+        </div>
+        <button class="blue-btn bottom-btn" id="restart">Kembali ke Awal</button>
+      </section>
+    </main>
+
+    <audio id="bgm" loop preload="auto">
+      <source src="/music/music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
